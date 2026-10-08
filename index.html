@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEO Blog Writer – Từ một từ khóa đến bài blog SEO tiếng Việt</title>
+<meta name="description" content="Skill hướng dẫn ChatGPT viết bài blog SEO tiếng Việt từ một từ khóa: nghiên cứu nguồn, 10 tiêu đề, dàn ý 9 H2, bài viết kèm FAQ, bộ ảnh minh họa và bản nháp WordPress.">
+<link rel="canonical" href="https://chjoseph315-dot.github.io/seo-blog-writer-skill/">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#1f1b16">
+
+<!-- Hiển thị khi chia sẻ lên Facebook / Zalo / Messenger -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SEO Blog Writer">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="SEO Blog Writer – Từ một từ khóa đến bài blog SEO tiếng Việt">
+<meta property="og:description" content="Nghiên cứu nguồn, 10 tiêu đề, dàn ý 9 H2, bài viết kèm FAQ, bộ ảnh minh họa bằng ChatGPT và bản nháp WordPress.">
+<meta property="og:url" content="https://chjoseph315-dot.github.io/seo-blog-writer-skill/">
+<meta property="og:image" content="https://chjoseph315-dot.github.io/seo-blog-writer-skill/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SEO Blog Writer – Từ một từ khóa đến bài blog SEO tiếng Việt">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SEO Blog Writer – Từ một từ khóa đến bài blog SEO tiếng Việt">
+<meta name="twitter:description" content="Nghiên cứu nguồn, 10 tiêu đề, dàn ý 9 H2, bài viết kèm FAQ, bộ ảnh minh họa và bản nháp WordPress.">
+<meta name="twitter:image" content="https://chjoseph315-dot.github.io/seo-blog-writer-skill/og-image.png">
+
+<style>
+:root{
+  --bg:#faf6ee; --ink:#1f1b16; --muted:#5f574c; --line:#e6dcc8;
+  --card:#fffdf8; --accent:#febd08; --accent-ink:#1f1b16; --dark:#1f1b16;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#17140f; --ink:#f4ecdc; --muted:#b5aa97; --line:#35302520;
+    --card:#201c15; --dark:#0f0d09;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+.wrap{max-width:960px; margin:0 auto; padding:0 20px}
+a{color:inherit}
+
+/* Hero */
+.hero{padding:56px 0 48px}
+.badge{display:inline-flex; align-items:center; gap:10px; font-size:14px; color:var(--muted);
+  border:1px solid var(--line); background:var(--card); padding:6px 14px 6px 8px; border-radius:999px}
+.badge img{width:26px; height:26px}
+h1{font-size:clamp(34px,7vw,60px); line-height:1.08; margin:22px 0 16px; letter-spacing:-.02em; font-weight:800}
+h1 mark{background:linear-gradient(transparent 62%, var(--accent) 62% 92%, transparent 92%); color:inherit; padding:0 2px}
+.lead{font-size:clamp(18px,2.6vw,21px); color:var(--muted); max-width:640px; margin:0 0 28px}
+.cta{display:flex; flex-wrap:wrap; gap:12px}
+.btn{display:inline-block; text-decoration:none; font-weight:700; padding:14px 22px; border-radius:12px;
+  border:2px solid var(--ink); transition:transform .12s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--accent); color:var(--accent-ink); border-color:var(--accent-ink)}
+.btn-ghost{background:transparent; color:var(--ink)}
+
+section{padding:40px 0; border-top:1px solid var(--line)}
+h2{font-size:clamp(26px,4.5vw,34px); line-height:1.2; margin:0 0 8px; letter-spacing:-.01em}
+.sub{color:var(--muted); margin:0 0 26px}
+
+/* Cards */
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px}
+.card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px}
+.card h3{margin:0 0 6px; font-size:18px}
+.card p{margin:0; color:var(--muted); font-size:16px}
+.num{display:inline-grid; place-items:center; width:34px; height:34px; border-radius:50%;
+  background:var(--accent); color:var(--accent-ink); font-weight:800; margin-bottom:12px}
+
+/* Steps */
+.steps{list-style:none; margin:0; padding:0; counter-reset:s; display:grid; gap:12px}
+.steps li{counter-increment:s; display:grid; grid-template-columns:44px 1fr; gap:14px;
+  background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 18px}
+.steps li::before{content:counter(s); display:grid; place-items:center; width:38px; height:38px;
+  border-radius:50%; background:var(--dark); color:var(--accent); font-weight:800}
+.steps b{display:block; font-size:18px}
+.steps span{color:var(--muted); font-size:16px}
+.tag{display:inline-block; margin-left:6px; font-size:12px; font-weight:700; padding:2px 8px;
+  border-radius:999px; background:var(--accent); color:var(--accent-ink); vertical-align:2px}
+
+/* Prompt box */
+pre{margin:0; background:var(--dark); color:#f4ecdc; border-radius:16px; padding:20px; overflow-x:auto;
+  white-space:pre-wrap; word-break:break-word; font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.grid.q{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.two{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px}
+.two h3{margin:0 0 10px; font-size:18px}
+
+footer{padding:34px 0 50px; border-top:1px solid var(--line); color:var(--muted); font-size:15px}
+footer a{color:var(--ink)}
+@media (max-width:520px){
+  .hero{padding:36px 0 32px}
+  .btn{width:100%; text-align:center}
+  .steps li{grid-template-columns:38px 1fr; padding:14px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge"><img src="assets/icon.svg" alt="" width="26" height="26">Skill cho ChatGPT · Tiếng Việt</span>
+    <h1>Từ <mark>một từ khóa</mark> đến bài blog SEO hoàn chỉnh</h1>
+    <p class="lead">SEO Blog Writer hướng dẫn ChatGPT nghiên cứu nguồn, đề xuất tiêu đề, lập dàn ý, viết bài, tạo bộ ảnh minh họa và chuẩn bị bản nháp WordPress.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://chatgpt.com/skills?skill_id=6a9992d4b6b481918e9e786f1e544565" target="_blank" rel="noopener">Mở skill trong ChatGPT</a>
+      <a class="btn btn-ghost" href="https://github.com/chjoseph315-dot/seo-blog-writer-skill" target="_blank" rel="noopener">Xem trên GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>Bạn nhận được gì?</h2>
+      <p class="sub">Một quy trình trọn gói cho người làm content, marketing và chủ website.</p>
+      <div class="grid">
+        <div class="card"><h3>10 gợi ý tiêu đề</h3><p>Phù hợp từ khóa và ý định tìm kiếm, mỗi tiêu đề dưới 120 ký tự.</p></div>
+        <div class="card"><h3>Dàn ý 9 H2</h3><p>Mỗi H2 có 2–3 luận điểm, có điểm duyệt trước khi viết.</p></div>
+        <div class="card"><h3>Bài 1.800–2.500 từ</h3><p>Kèm kết luận, 6 câu hỏi thường gặp và nguồn tham khảo.</p></div>
+        <div class="card"><h3>Bộ ảnh nhất quán</h3><p>Tạo bằng ChatGPT, mỗi ảnh có prompt riêng và alt tiếng Việt.</p></div>
+        <div class="card"><h3>Meta title &amp; description</h3><p>Xuất file Markdown, thêm HTML khi cần đưa lên WordPress.</p></div>
+        <div class="card"><h3>Bản nháp WordPress</h3><p>Tạo draft và trả link chỉnh sửa khi đã có kết nối phù hợp.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Quy trình 7 bước</h2>
+      <p class="sub">Bạn chọn tiêu đề và duyệt dàn ý; hoặc để skill tự làm toàn bộ.</p>
+      <ol class="steps">
+        <li><div><b>Nghiên cứu</b><span>Đọc 3–5 nguồn, xác định ý định tìm kiếm và khoảng trống nội dung.</span></div></li>
+        <li><div><b>Chọn tiêu đề <span class="tag">Bạn duyệt</span></b><span>10 phương án, bạn chọn một.</span></div></li>
+        <li><div><b>Lập dàn ý <span class="tag">Bạn duyệt</span></b><span>9 H2 nội dung, chỉnh sửa đến khi hài lòng.</span></div></li>
+        <li><div><b>Viết bài</b><span>Viết theo cụm H2, biên tập thống nhất giọng văn, thêm kết luận và 6 FAQ.</span></div></li>
+        <li><div><b>Tạo ảnh</b><span>Lập kế hoạch ảnh, tạo lần lượt từng ảnh và kiểm tra chất lượng.</span></div></li>
+        <li><div><b>Kiểm tra &amp; xuất file</b><span>Rà soát cấu trúc, nguồn, từ khóa, ảnh; xuất Markdown và HTML.</span></div></li>
+        <li><div><b>Bản nháp WordPress</b><span>Tải ảnh, tạo draft và trả link sửa bài. Chỉ đăng công khai khi bạn yêu cầu.</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Bắt đầu nhanh</h2>
+      <p class="sub">Mở skill trong ChatGPT, rồi dán một trong hai mẫu dưới đây và đổi từ khóa của bạn.</p>
+      <div class="two">
+        <div>
+          <h3>Có duyệt tiêu đề và dàn ý</h3>
+<pre>Dùng $seo-blog-writer viết bài về “AI marketing cho doanh nghiệp nhỏ”.
+Độc giả: chủ doanh nghiệp Việt Nam.
+Độ dài: khoảng 2.000 từ.
+Cho tôi chọn tiêu đề và duyệt dàn ý trước khi viết.
+Sau đó tạo 5 ảnh nội dung bằng ChatGPT, phong cách minh họa tối giản.</pre>
+        </div>
+        <div>
+          <h3>Làm toàn bộ tự động</h3>
+<pre>Dùng $seo-blog-writer tạo bài về “cách xây dựng kế hoạch content marketing”.
+Tự chọn tiêu đề và dàn ý, viết khoảng 2.500 từ với 9 H2.
+Tạo 9 ảnh nội dung và 1 ảnh bìa, tỷ lệ 16:9.
+Xuất Markdown và HTML.</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Nguyên tắc chất lượng</h2>
+      <div class="grid q">
+        <div class="card"><p>Nguồn có thể kiểm chứng; không sao chép bài đối thủ, không bịa số liệu.</p></div>
+        <div class="card"><p>Từ khóa phân bố tự nhiên; không hứa thứ hạng tìm kiếm.</p></div>
+        <div class="card"><p>Không lưu mật khẩu hay API key trong skill, bài viết hoặc repo.</p></div>
+        <div class="card"><p>Chỉ báo hoàn thành những bước đã thực hiện và kiểm tra được.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    SEO Blog Writer · <a href="https://github.com/chjoseph315-dot/seo-blog-writer-skill/blob/main/SKILL.md" target="_blank" rel="noopener">Đọc hướng dẫn đầy đủ (SKILL.md)</a> ·
+    <a href="https://github.com/chjoseph315-dot/seo-blog-writer-skill" target="_blank" rel="noopener">Mã nguồn trên GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
